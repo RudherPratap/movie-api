@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/9494ea9dfd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <script defer src="javascript/index.js" type="module"></script>
+  <script defer src="javascript/ui.js" type="module"></script>
+  <script defer src="javascript/api.js" type="module"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="head">
+        <div class="here">
+          <h3 style="text-align: center;">Search here for movies</h3>
+        </div>
+        <hr style="margin: 15px; border: 1px solid #eee;">
+      </div>
+      <div class="sidebody" style="height: 69vh;">
+        <div class="search-container">
+          <input type="text" class="search-box" placeholder="Search your movie.." id="mov_search">
+          <button type="button" class="search-button">Search</button>
+        </div>
+        <hr style="margin: 40px 0; border: 1px solid #eee;">
+        <div class="favourite">
+          <p>Your Favourites</p>
+          <hr>
+          <ul id="fav_movies"></ul>
+
+        </div>
+
+      </div>
+      <div class="sidefoot">
+        <hr style="margin: 15px 0; border: 1px solid #eee;">
+        <div class="social-media">
+          <a href="https://www.instagram.com/rudr_pratap_singh_12?igsh=dGFyd2RjZXluaHJ2"
+            class="fa-brands fa-square-instagram"></a>
+          <a href="https://github.com/RudherPratap" class="fa-brands fa-github"></a>
+        </div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="header">
+        <p>Searched Results</p>
+      </div>
+      <div class="search_mov">
+        <ul id="searched_items"></ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

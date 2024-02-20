@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  font-size: 18px;
+}
+body{
+  margin: 4vh;
+
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar{
+  width: 25%;
+  border: apx solid #eee;
+  border-radius: 3px;
+  padding: 15px;
+  height: 92vh;
+  box-shadow: 0px 0px 0px 3px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.data{
+  width: 85%;
+  border-radius: 3px;
+  height: 92vh;
+  overflow-y: auto;
+  margin-left: 30px;
+}
+.search-container {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-box {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-button {
+  background-color: gray;
+  color: #fff;
+  border: 2px solid gray;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+
+.search-button:hover {
+  background-color: #eee;
+  border-color: #eee;
+}
+.social-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favourite{
+  text-align: center;
+  overflow-y: auto;
+  max-height: 300px;
+}
+.fa-brands{
+  font-size: 25px;
+  margin: 0 10px;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fa-brands:hover{
+  color: orangered;
+}
+.header{
+  height: 200px;
+  border-radius: 3px;
+  background-color: #333;
+  /* margin: 3vh 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header p{
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.search_mov{
+  margin-top: 10px;
+  border: 1px solid gray;
+  height: 471px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 475px;
+}
+.favorite-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+
+.card-content {
+  padding: 10px;
+  border: apx solid black;
+}
+
+
+.like-icon.liked {
+  color: red; 
+}
+
+ul{
+  list-style-type: none;
+}
+#fav_movies{
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar{
+    width: 50%;
+  }
+  .data{
+    width: 50%;
+  }
+}
