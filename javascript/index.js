@@ -5,7 +5,7 @@ import { fetchMovieData, fetchMovieDetails } from './api.js';
 document.addEventListener("DOMContentLoaded", function () {
   const { searchBox, searchButton, searchedItemsList, favoriteMoviesContainer } = initializeUI();
 
-  let likedMovies = [];
+  const likedMovies = [];
 
   //the local storage is not working
   /*
@@ -64,7 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
           console.error("Error fetching movie details:", error);
         }
       } else {
-        console.log("Movie is already liked!");
+        console.log("movie is already liked");
+        // clickedElement.classList.remove("liked");
+        // likedMovies = likedMovies.filter((movieId) => movieId !== selectedMovieId);
+        // removeFavouriteCard(selectedMovieId, favoriteMoviesContainer);
       }
     }
   }

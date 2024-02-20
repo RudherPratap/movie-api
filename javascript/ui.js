@@ -21,8 +21,10 @@ export function createMovieCard(movie, addToFavorites) {
   card.style.border = "1px solid #ccc"
   card.innerHTML = `
   <div class="card-content">
-  <h2>${movie.Title}</h2>
-  <p>${movie.Year}<p>
+  <img src="${movie.Poster}" alt="${movie.Ttile} Poster" style="width: 10%">
+  <h2>Title: ${movie.Title}</h2>
+  <p>Year: ${movie.Year}<p>
+  <p>Type: ${movie.Type}<p>
   <i class="fas fa-heart like-icon" data-imdb-id="${movie.imdbID}"></i>
     </div>`;
   card.addEventListener("click", addToFavorites);
@@ -33,8 +35,9 @@ export function createFavouriteCard(movie, favoriteMoviesContainer) {
   const favouriteCard = document.createElement("div");
   favouriteCard.classList.add("favourite-card");
   favouriteCard.innerHTML = `
+  <img src="${movie.Poster}" alt="${movie.Ttile} Poster" style="width: 50%">
     <h2>${movie.Title}</h2>
-    <div class="card-content">
+    <div class="card-contents">
       <h3>${movie.Year}</h3>
       <p>${movie.Plot}</p>
     </div>`;
@@ -43,8 +46,9 @@ export function createFavouriteCard(movie, favoriteMoviesContainer) {
 }
 
 export function removeFavouriteCard(movieId, favoriteMoviesContainer) {
-  const cardToRemove = document.querySelector(`.favourite-card[data-imdb-id="${movieId}"]`);
-  if (cardToRemove) {
-    favoriteMoviesContainer.removeChild(cardToRemove);
-  }
+  const favoritesContainer = document.getElementById("fav_movies");
+  // const cardToRemove = document.querySelector(`.favourite-card[data-imdb-id="${movieId}"]`);
+  // if (cardToRemove) {
+  //   favoriteMoviesContainer.removeChild(cardToRemove);
+  // }
 }

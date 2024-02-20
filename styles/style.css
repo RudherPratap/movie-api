@@ -115,6 +115,14 @@ body{
 .card-content {
   padding: 10px;
   border: apx solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-contents {
+  padding: 10px;
+  border: apx solid black;
+  
 }
 
 
@@ -129,11 +137,11 @@ ul{
   margin-top: 10px;
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .sidebar{
     width: 50%;
   }
   .data{
     width: 50%;
   }
-}
+} */
